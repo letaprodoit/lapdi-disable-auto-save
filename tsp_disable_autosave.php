@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: 	TSP Disable Auto-Save
-Plugin URI: 	http://www.thesoftwarepeople.com/
+Plugin URI: 	http://www.thesoftwarepeople.com/software/plugins/wordpress/disable-autosave-for-wordpress.html
 Description: 	Plugin to prevent WordPress from automatically saving duplicate copies of posts while editing.
 Author: 		The Software People
 Author URI: 	http://www.thesoftwarepeople.com/
