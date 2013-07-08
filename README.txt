@@ -1,7 +1,7 @@
 === TSP Disable Autosave ===
 Contributors: sharrondenice
 Donate link: http://www.thesoftwarepeople.com/software/plugins/wordpress/disable-autosave-for-wordpress.html
-Tags: disable autosave
+Tags: disable autosave the software people
 Requires at least: 3.3
 Tested up to: 3.5.1
 Stable tag: master
