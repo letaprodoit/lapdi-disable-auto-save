@@ -16,7 +16,7 @@ Disable Autosave prevents WordPress from automatically saving duplicate copies o
 
 == Installation ==
 
-1. Upload `tsp_disable_autosave` to the `/wp-content/plugins/` directory
+1. Upload `tsp-disable-auto-save` to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
 
 == Frequently asked questions ==
