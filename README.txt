@@ -2,8 +2,8 @@
 Contributors: sharrondenice
 Donate link: http://www.thesoftwarepeople.com/software/plugins/wordpress/disable-autosave-for-wordpress.html
 Tags: disable autosave the software people
-Requires at least: 3.3
-Tested up to: 3.5.1
+Requires at least: 3.5.1
+Tested up to: 3.5.2
 Stable tag: 1.0.0
 License: Apache v2.0
 License URI: http://www.apache.org/licenses/LICENSE-2.0
