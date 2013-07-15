@@ -124,7 +124,12 @@ if (! function_exists('fn_tsp_plugins_add_menu_render') ){
 
 function fn_tspdas_add_admin_menu() 
 {
-	add_menu_page( 'TSP Plugins', 'TSP Plugins', 'manage_options', 'tsp-disable-auto-save', 'fn_tsp_plugins_add_menu_render', WP_CONTENT_URL."/plugins/tsp-disable-auto-save/images/tsp_icon_16.png", 2617638); 
+	$parent_slug 	= 'tsp_plugins';
+
+	if ( !menu_page_url( $parent_slug, false ) )
+	{
+		add_menu_page( 'TSP Plugins', 'TSP Plugins', 'manage_options', $parent_slug, 'fn_tsp_plugins_add_menu_render', WP_CONTENT_URL."/plugins/tsp-disable-auto-save/images/tsp_icon_16.png", 2617638); 
+	}//endif
 }
 
 function fn_tspdas_plugin_init() 
