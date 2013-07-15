@@ -31,6 +31,10 @@ Nothing. The script runs in real-time behind the scenes. Once installed and acti
 
 == Changelog ==
 
-
+= 1.0.1 =
+* Checks for existence of parent settings menu before overwriting it
 
 == Upgrade notice ==
+
+= 1.0.1 =
+Menu fix.
