@@ -34,6 +34,9 @@ Nothing. The script runs in real-time behind the scenes. Once installed and acti
 = 1.0.1 =
 * Checks for existence of parent settings menu before overwriting it
 
+= 1.0.0 =
+* Launch
+
 == Upgrade notice ==
 
 = 1.0.1 =
