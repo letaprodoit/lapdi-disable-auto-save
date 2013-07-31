@@ -45,7 +45,7 @@ require( TSPDAS_PLUGIN_PATH . 'TSP_Easy_Dev.extend.php');
 //--------------------------------------------------------
 // initialize the Facepile plugin
 //--------------------------------------------------------
-$diable_autosave 								= new TSP_Easy_Dev( __FILE__, TSPDAS_PLUGIN_REQ_VERSION );
+$diable_autosave 								= new TSP_Easy_Dev( TSPDAS_PLUGIN_FILE, TSPDAS_PLUGIN_REQ_VERSION );
 
 $diable_autosave->set_options_handler( new TSP_Easy_Dev_Options_Auto_Save( $easy_dev_settings, false ) );
 
@@ -54,5 +54,5 @@ remove_action('pre_post_update', 'wp_save_post_revision');
 
 $diable_autosave->remove_registered_scripts( array( 'autosave' ) );
 
-$diable_autosave->run( __FILE__ );
+$diable_autosave->run( TSPDAS_PLUGIN_FILE );
 ?>

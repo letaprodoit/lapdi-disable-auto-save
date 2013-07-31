@@ -124,7 +124,7 @@ class TSP_Easy_Dev_Options_Auto_Save extends TSP_Easy_Dev_Options
 	 *
 	 * @return output to screen
 	 */
-	function display_plugin_settings_page(){}
+	function display_plugin_options_page(){}
 	
 }//end TSP_Easy_Dev_Options_Auto_Save
 ?>
