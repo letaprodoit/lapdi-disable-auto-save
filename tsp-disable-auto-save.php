@@ -2,64 +2,57 @@
 /*
 Plugin Name: 	TSP Disable Auto-Save
 Plugin URI: 	http://www.thesoftwarepeople.com/software/plugins/wordpress/disable-autosave-for-wordpress.html
-Description: 	Plugin to prevent WordPress from automatically saving duplicate copies of posts while editing.
+Description:    Plugin to prevent WordPress from automatically saving duplicate copies of posts while editing.
 Author: 		The Software People
 Author URI: 	http://www.thesoftwarepeople.com/
-Version: 		1.0.1
+Version: 		1.1.0
+Text Domain: 	tspdas
 Copyright: 		Copyright © 2013 The Software People, LLC (www.thesoftwarepeople.com). All rights reserved
 License: 		APACHE v2.0 (http://www.apache.org/licenses/LICENSE-2.0)
 */
 
-define( 'TSPDAS_REQUIRED_WP_VERSION', '3.5.1' );
-define( 'TSPDAS_PLUGIN_BASENAME', plugin_basename( __FILE__ ) );
-
 require_once(ABSPATH . 'wp-admin/includes/plugin.php' );
 
-// Get the plugin path
-if (!defined('WP_CONTENT_DIR')) define('WP_CONTENT_DIR', ABSPATH . 'wp-content');
-if (!defined('DIRECTORY_SEPARATOR')) {
-    if (strpos(php_uname('s') , 'Win') !== false) define('DIRECTORY_SEPARATOR', '\\');
-    else define('DIRECTORY_SEPARATOR', '/');
-}
+define('TSPDAS_PLUGIN_FILE', 				__FILE__ );
+define('TSPDAS_PLUGIN_PATH',				plugin_dir_path( __FILE__ ) );
+define('TSPDAS_PLUGIN_URL', 				plugin_dir_url( __FILE__ ) );
+define('TSPDAS_PLUGIN_BASE_NAME', 			plugin_basename( __FILE__ ) );
+define('TSPDAS_PLUGIN_NAME', 				'tsp-disable-auto-save');
+define('TSPDAS_PLUGIN_TITLE', 				'TSP Diable Auto-Save');
+define('TSPDAS_PLUGIN_REQ_VERSION', 		"3.5.1");
 
-// Set the abs plugin path
-define('PLUGIN_ABS_PATH', ABSPATH . PLUGINDIR );
-$plugin_abs_path = PLUGIN_ABS_PATH . DIRECTORY_SEPARATOR . "tsp-disable-auto-save";
-define('TSPDAS_ABS_PATH', $plugin_abs_path);
-$plugin_url = WP_CONTENT_URL . '/plugins/' . plugin_basename(dirname(__FILE__)) . '/';
-define('TSPDAS_URL_PATH', $plugin_url);
-
-// Set the file path
-$file_path    = $plugin_abs_path . DIRECTORY_SEPARATOR . basename(__FILE__);
-
-// Set the absolute path
-$asolute_path = dirname(__FILE__) . DIRECTORY_SEPARATOR;
-define('TSPDAS_ABSPATH', $asolute_path);
-
-
-include_once(TSPDAS_ABS_PATH . '/includes/settings.inc.php');
-
-
-register_activation_hook( __FILE__, 'fn_tspdas_install' );
-register_uninstall_hook( __FILE__, 'fn_tspdas_uninstall' );
-//--------------------------------------------------------
-// install plugin
-//--------------------------------------------------------
-function fn_tspdas_install()
+if (!class_exists('TSP_Easy_Dev'))
 {
-}
-//--------------------------------------------------------
-// uninstall plugin
-//--------------------------------------------------------
-function fn_tspdas_uninstall()
-{
-}
-//--------------------------------------------------------
-function fn_tspdas() 
-{
-	wp_deregister_script('autosave');
-}
+	add_action( 'admin_notices', function (){
+		
+		$message = TSPDAS_PLUGIN_TITLE . ' <strong>was not installed</strong>, plugin requires the installation and activation of <strong><a href="plugin-install.php?tab=search&type=term&s=TSP+Easy+Dev">TSP Easy Dev</a></strong> or <strong><a href="plugin-install.php?tab=search&type=term&s=TSP+Easy+Dev+Pro">TSP Easy Dev Pro</a></strong>.';
+	    ?>
+	    <div class="error">
+	        <p><?php echo $message; ?></p>
+	    </div>
+	    <?php
+	} );
+	
+	deactivate_plugins( TSPDAS_PLUGIN_BASE_NAME );
+	
+	return;
+}//endif
 
-add_action( 'wp_print_scripts', 'fn_tspdas' );
+global $easy_dev_settings;
 
+require( TSPDAS_PLUGIN_PATH . 'TSP_Easy_Dev.config.php');
+require( TSPDAS_PLUGIN_PATH . 'TSP_Easy_Dev.extend.php');
+//--------------------------------------------------------
+// initialize the Facepile plugin
+//--------------------------------------------------------
+$diable_autosave 								= new TSP_Easy_Dev( __FILE__, TSPDAS_PLUGIN_REQ_VERSION );
+
+$diable_autosave->set_options_handler( new TSP_Easy_Dev_Options_Auto_Save( $easy_dev_settings, false ) );
+
+// Remove revisions actions
+remove_action('pre_post_update', 'wp_save_post_revision');
+
+$diable_autosave->remove_registered_scripts( array( 'autosave' ) );
+
+$diable_autosave->run( __FILE__ );
 ?>

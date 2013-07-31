@@ -1,7 +1,7 @@
 === TSP Disable Autosave ===
 Contributors: sharrondenice
 Donate link: http://www.thesoftwarepeople.com/software/plugins/wordpress/disable-autosave-for-wordpress.html
-Tags: disable autosave the software people
+Tags: disable, autosave, revisions, the software people
 Requires at least: 3.5.1
 Tested up to: 3.5.2
 Stable tag: 1.0.1
@@ -31,6 +31,9 @@ Nothing. The script runs in real-time behind the scenes. Once installed and acti
 
 == Changelog ==
 
+= 1.1.0 =
+* Now uses Easy Dev Pro for easy plugin development, #embraceOOD
+
 = 1.0.1 =
 * Checks for existence of parent settings menu before overwriting it
 
@@ -38,6 +41,9 @@ Nothing. The script runs in real-time behind the scenes. Once installed and acti
 * Launch
 
 == Upgrade notice ==
+
+= 1.1.0 =
+Plugin now uses TSP Easy Dev.
 
 = 1.0.1 =
 Menu fix.

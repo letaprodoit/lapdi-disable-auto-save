@@ -1,6 +1,6 @@
-Disable Autosave (WordPress Plugin) 1.0
+Disable Autosave for WordPress
 -------
-Disable Autosave (WordPress Plugin) plugin prevents WordPress from automatically saving duplicate copies of posts while editing.
+Disable Autosave for WordPresss plugin prevents WordPress from automatically saving duplicate copies of posts while editing.
 
 For up-to-date installation and setup notes, visit the FAQ:
 [http://lab.thesoftwarepeople.com/tracker/wiki/wordpress-das:MainPage](http://lab.thesoftwarepeople.com/tracker/wiki/wordpress-das:MainPage)
