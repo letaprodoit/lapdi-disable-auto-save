@@ -33,7 +33,7 @@ Nothing. The script runs in real-time behind the scenes. Once installed and acti
 
 = 1.1.0 =
 * Now uses Easy Dev Pro for easy plugin development, #embraceOOD
-* Includes not saving revisions automatically as well
+* Includes not automatically saving revisions as well
 
 = 1.0.1 =
 * Checks for existence of parent settings menu before overwriting it
@@ -44,7 +44,7 @@ Nothing. The script runs in real-time behind the scenes. Once installed and acti
 == Upgrade notice ==
 
 = 1.1.0 =
-Plugin now uses TSP Easy Dev. And includes not saving revisions.
+Plugin now requires TSP Easy Dev. New features.
 
 = 1.0.1 =
 Menu fix.
