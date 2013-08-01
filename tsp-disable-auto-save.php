@@ -2,7 +2,7 @@
 /*
 Plugin Name: 	TSP Disable Auto-Save
 Plugin URI: 	http://www.thesoftwarepeople.com/software/plugins/wordpress/disable-autosave-for-wordpress.html
-Description:    Plugin to prevent WordPress from automatically saving duplicate copies of posts while editing.
+Description:    Plugin to <strong>stop automatically saving duplicate copies of posts</strong> while editing. Powered by <strong><a href="http://wordpress.org/plugins/tsp-easy-dev/">TSP Easy Dev</a></strong>.
 Author: 		The Software People
 Author URI: 	http://www.thesoftwarepeople.com/
 Version: 		1.1.0
@@ -52,7 +52,7 @@ global $easy_dev_settings;
 require( TSPDAS_PLUGIN_PATH . 'TSP_Easy_Dev.config.php');
 require( TSPDAS_PLUGIN_PATH . 'TSP_Easy_Dev.extend.php');
 //--------------------------------------------------------
-// initialize the Facepile plugin
+// initialize the plugin
 //--------------------------------------------------------
 $diable_autosave 								= new TSP_Easy_Dev( TSPDAS_PLUGIN_FILE, TSPDAS_PLUGIN_REQ_VERSION );
 
