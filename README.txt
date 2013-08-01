@@ -3,8 +3,8 @@ Contributors: sharrondenice
 Donate link: http://www.thesoftwarepeople.com/software/plugins/wordpress/disable-autosave-for-wordpress.html
 Tags: disable, autosave, revisions, the software people
 Requires at least: 3.5.1
-Tested up to: 3.5.2
-Stable tag: 1.0.1
+Tested up to: 3.5.6
+Stable tag: 1.1.0
 License: Apache v2.0
 License URI: http://www.apache.org/licenses/LICENSE-2.0
 
@@ -33,6 +33,7 @@ Nothing. The script runs in real-time behind the scenes. Once installed and acti
 
 = 1.1.0 =
 * Now uses Easy Dev Pro for easy plugin development, #embraceOOD
+* Includes not saving revisions automatically as well
 
 = 1.0.1 =
 * Checks for existence of parent settings menu before overwriting it
@@ -43,7 +44,7 @@ Nothing. The script runs in real-time behind the scenes. Once installed and acti
 == Upgrade notice ==
 
 = 1.1.0 =
-Plugin now uses TSP Easy Dev.
+Plugin now uses TSP Easy Dev. And includes not saving revisions.
 
 = 1.0.1 =
 Menu fix.
