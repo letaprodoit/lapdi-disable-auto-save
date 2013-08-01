@@ -59,6 +59,10 @@ $diable_autosave 								= new TSP_Easy_Dev( TSPDAS_PLUGIN_FILE, TSPDAS_PLUGIN_R
 // Display the parent page but not the options page for this plugin
 $diable_autosave->set_options_handler( new TSP_Easy_Dev_Options_Auto_Save( $easy_dev_settings, true, false ) );
 
+$diable_autosave->add_link ( 'FAQ', 			'http://wordpress.org/extend/plugins/tsp-disable-auto-save/faq/' );
+$diable_autosave->add_link ( 'Rate Me', 		'http://wordpress.org/support/view/plugin-reviews/tsp-disable-auto-save' );
+$diable_autosave->add_link ( 'Support', 		'http://wordpress.org/support/plugin/tsp-disable-auto-save' );
+
 // Remove revisions actions
 remove_action('pre_post_update', 'wp_save_post_revision');
 
