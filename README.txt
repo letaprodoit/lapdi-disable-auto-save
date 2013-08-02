@@ -4,7 +4,7 @@ Donate link: http://www.thesoftwarepeople.com/software/plugins/wordpress/disable
 Tags: disable, autosave, revisions, the software people
 Requires at least: 3.5.1
 Tested up to: 3.6
-Stable tag: 1.1.0
+Stable tag: 1.1.1
 License: Apache v2.0
 License URI: http://www.apache.org/licenses/LICENSE-2.0
 
@@ -31,6 +31,9 @@ Nothing. The script runs in real-time behind the scenes. Once installed and acti
 
 == Changelog ==
 
+= 1.1.1 =
+* Updated admin_notices hooks to not use inline functions.
+
 = 1.1.0 =
 * Now uses Easy Dev Pro for easy plugin development, <a href="https://twitter.com/#bringbackOOD">#bringbackOOD</a>
 * Includes not automatically saving revisions as well
@@ -42,6 +45,9 @@ Nothing. The script runs in real-time behind the scenes. Once installed and acti
 * Launch
 
 == Upgrade notice ==
+
+= 1.1.1 =
+Maintenance fix.
 
 = 1.1.0 =
 Plugin now requires TSP Easy Dev. New features.
