@@ -5,9 +5,9 @@ Plugin URI: 	http://www.thesoftwarepeople.com/software/plugins/wordpress/disable
 Description:    Disable Auto-Save <strong>stops automatically saving duplicate copies of posts</strong> while editing. Powered by <strong><a href="http://wordpress.org/plugins/tsp-easy-dev/">TSP Easy Dev</a></strong>.
 Author: 		The Software People
 Author URI: 	http://www.thesoftwarepeople.com/
-Version: 		1.1.1
+Version: 		1.1.2
 Text Domain: 	tspdas
-Copyright: 		Copyright Â© 2013 The Software People, LLC (www.thesoftwarepeople.com). All rights reserved
+Copyright: 		Copyright © 2013 The Software People, LLC (www.thesoftwarepeople.com). All rights reserved
 License: 		APACHE v2.0 (http://www.apache.org/licenses/LICENSE-2.0)
 */
 
@@ -61,7 +61,7 @@ $diable_autosave->set_options_handler( new TSP_Easy_Dev_Options_Auto_Save( $easy
 
 $diable_autosave->add_link ( 'FAQ', 			'http://wordpress.org/extend/plugins/tsp-disable-auto-save/faq/' );
 $diable_autosave->add_link ( 'Rate Me', 		'http://wordpress.org/support/view/plugin-reviews/tsp-disable-auto-save' );
-$diable_autosave->add_link ( 'Support', 		'http://wordpress.org/support/plugin/tsp-disable-auto-save' );
+$diable_autosave->add_link ( 'Support', 		'http://lab.thesoftwarepeople.com/tracker/wordpress-das/issues/new' );
 
 // Remove revisions actions
 remove_action('pre_post_update', 'wp_save_post_revision');
