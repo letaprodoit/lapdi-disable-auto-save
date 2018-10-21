@@ -1,10 +1,10 @@
-=== TSP Disable Autosave ===
+=== LAPDI Disable Autosave ===
 Contributors: sharrondenice
-Donate link: http://www.thesoftwarepeople.com/software/plugins/wordpress/disable-autosave-for-wordpress.html
+Donate link: https://www.letaprodoit.com/apps/plugins/wordpress/disable-autosave-for-wordpress/
 Tags: disable, autosave, revisions, the software people
 Requires at least: 3.5.1
-Tested up to: 3.6
-Stable tag: 1.1.2
+Tested up to: 5.0.0
+Stable tag: 1.1.3
 License: Apache v2.0
 License URI: http://www.apache.org/licenses/LICENSE-2.0
 
@@ -16,7 +16,7 @@ Disable Autosave prevents WordPress from automatically saving duplicate copies o
 
 == Installation ==
 
-BEFORE YOU BEGIN: Requires the installation and activation of [TSP Easy Dev Latest Version](http://wordpress.org/plugins/tsp-easy-dev)
+BEFORE YOU BEGIN: Requires the installation and activation of [LAPDI Easy Dev Latest Version](http://wordpress.org/plugins/tsp-easy-dev)
 
 1. Upload `tsp-disable-auto-save` to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
@@ -32,6 +32,9 @@ Nothing. The script runs in real-time behind the scenes. Once installed and acti
 
 
 == Changelog ==
+
+= 1.1.3 =
+* Enhancement. Requires v2.0.0 of LAPDI Easy Dev
 
 = 1.1.2 =
 * Enhancement. Updated support link
@@ -50,6 +53,9 @@ Nothing. The script runs in real-time behind the scenes. Once installed and acti
 * Launch
 
 == Upgrade notice ==
+
+= 1.1.3 =
+Enhancement. Requires v2.0.0 of LAPDI Easy Dev
 
 = 1.1.2 =
 Enhancement. Updated support link

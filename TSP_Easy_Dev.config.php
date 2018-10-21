@@ -1,7 +1,7 @@
 <?php									
 /* @group Easy Dev Package settings, all plugins use the same settings, DO NOT EDIT */
 if ( !defined( 'TSP_PARENT_NAME' )) define('TSP_PARENT_NAME', 			'tsp_plugins');
-if ( !defined( 'TSP_PARENT_TITLE' )) define('TSP_PARENT_TITLE', 		'TSP Plugins');
+if ( !defined( 'TSP_PARENT_TITLE' )) define('TSP_PARENT_TITLE', 		'LAPDI Plugins');
 if ( !defined( 'TSP_PARENT_MENU_POS' )) define('TSP_PARENT_MENU_POS', 	2617638.180);
 /* @end */
 
@@ -29,16 +29,21 @@ $easy_dev_settings['smarty_template_dirs']	= array( TSPDAS_PLUGIN_PATH . 'templa
 $easy_dev_settings['smarty_compiled_dir']  	= TSP_EASY_DEV_TMP_PATH . TSPDAS_PLUGIN_NAME . DS . 'compiled';
 $easy_dev_settings['smarty_cache_dir'] 		= TSP_EASY_DEV_TMP_PATH . TSPDAS_PLUGIN_NAME . DS . 'cache';
 
-//* Custom globals *//
-$easy_dev_settings['contact_url'] 			= 'http://www.thesoftwarepeople.com/about-us/contact-us.html';
-$easy_dev_settings['plugin_list']			= 'http://www.thesoftwarepeople.com/plugins/wordpress/plugins.json';
-//* Custom globals *//
-
 $easy_dev_settings['plugin_options']	= array(
-	'category_fields'			=> array(),
-	'post_fields'				=> array(),
-	'widget_fields'				=> array(),
-	'settings_fields'			=> array(),
-	'shortcode_fields'			=> array(),
+    'category_fields'			=> array(),
+    'post_fields'				=> array(),
+    'widget_fields'				=> array(),
+    'settings_fields'			=> array(),
 );
-?>
+
+$easy_dev_settings['plugin_options']['shortcode_fields'] = $easy_dev_settings['plugin_options']['widget_fields'];
+$easy_dev_settings['required_plugins']	     = array(
+    'tsp-easy-dev' => array(
+        'title'     => 'LAPDI Easy Dev',
+        'version'   => '2.0.0',
+        'operator'  => '>='
+    )
+);
+$easy_dev_settings['incompatible_plugins']	 = array();
+$easy_dev_settings['automations']	         = array();
+$easy_dev_settings['endpoints']	             = array();
