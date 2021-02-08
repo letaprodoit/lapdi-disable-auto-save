@@ -3,7 +3,7 @@ Disable Autosave for WordPress
 Disable Autosave for WordPresss plugin prevents WordPress from automatically saving duplicate copies of posts while editing.
 
 For up-to-date installation and setup notes, visit the FAQ:
-[http://lab.thesoftwarepeople.com/tracker/wiki/wordpress-das:MainPage](http://lab.thesoftwarepeople.com/tracker/wiki/wordpress-das:MainPage)
+[https://lab.letaprodoit.com/public/wiki/wordpress-das:MainPage](https://lab.letaprodoit.com/public/wiki/wordpress-das:MainPage)
 
 
 *GENERAL INSTALLATION NOTES*
@@ -19,11 +19,11 @@ For up-to-date installation and setup notes, visit the FAQ:
 
 Thank you for downloading the Disable Autosave (WordPress Plugin) 1.0
 If you find any issues, please report them in the issue tracker on our website:
-[http://lab.thesoftwarepeople.com/tracker/wordpress-das](http://lab.thesoftwarepeople.com/tracker/wordpress-das)
+[https://lab.letaprodoit.com/public/wordpress-das](https://lab.letaprodoit.com/public/wordpress-das)
 
 *COPYRIGHT AND LICENSE*
 
-Copyright 2013 The Software People, LLC
+Copyright 2021 The Software People, LLC
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this work except in compliance with the License.
